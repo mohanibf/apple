@@ -26,11 +26,11 @@ function gitgraph { git log --oneline --graph --decorate --all }
 ====================
 
 git config --list
-git config --global user.name "Mohan"
-git config --global user.email "mohanibf22@gmail.com"
+git config --global user.name "NAME"
+git config --global user.email "EMAIL"
 
-git config --local user.name "Mohan"
-git config --local user.email "mohanibf22@gmail.com"
+git config --local user.name "NAME"
+git config --local user.email "EMAIL"
 
 git config --list --show-origin
 
@@ -48,6 +48,7 @@ git checkout -b branch-name
 git checkout branch-name
 
 
-git fetch
-git rebase dev
+
+git pull --rebase origin dev
+git push origin dev
 
