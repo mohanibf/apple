@@ -23,7 +23,7 @@ git commit -m "first commit"
 git log
 git log -p
 
-
+function gitgraph { git log --oneline --graph --decorate --all }
 ====================
 
 git config --list
@@ -39,3 +39,12 @@ Adding this to the staging area
 git add .
 
 
+
+git config --global init.defaultBranch dev
+
+
+// it will create new branch and switch to that branch
+git checkout -b branch-name
+
+// it will directly switch to previously created branch
+git checkout branch-name
